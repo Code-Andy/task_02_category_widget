@@ -35,18 +35,24 @@ class UnitConverterApp extends StatelessWidget {
         backgroundColor: Colors.green[100],
         body: Center(
           // TODO: Determine what properties you'll need to pass into the widget
-          child: Padding(
-            padding: _padding,
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                Padding(padding: _padding, child: Icon(Icons.cake)),
-                Center(
-                  child: Text(
-                    _categoryName,
+          child: Category(
+            body: Padding(
+              padding: _padding,
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  Padding(padding: _padding, child: Icon(Icons.cake)),
+                  Center(
+                    child: Text(
+                      _categoryName,
+                      style: new TextStyle(
+                          fontSize: 24.0,
+                          color: Colors.grey[700],
+                      ),
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),
